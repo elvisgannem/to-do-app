@@ -36,7 +36,8 @@ const ListaTareas = ({tareas, cambiarTareas, mostrarCompletadas}) => {
             {tareas.length > 0 ? 
                 tareas.map((tarea) => {
                 if(mostrarCompletadas){
-                    return <Tareas 
+                    return (
+                            <Tareas 
                                 key ={tarea.id} 
                                 tarea={tarea}
                                 toggleCompletada = {toggleCompletada} 
@@ -44,14 +45,17 @@ const ListaTareas = ({tareas, cambiarTareas, mostrarCompletadas}) => {
                                 borrarTarea={borrarTarea}
                                 //pasando las funciones y propiedades a Tareas
                             />   
+                    )
                             //si no está completada, la devuelve al arreglo.
                 } else if (!tarea.completada) {
-                    return <Tareas 
-                    key ={tarea.id} 
-                    tarea={tarea}
-                    toggleCompletada = {toggleCompletada} 
-                    editarTarea={editarTarea}
-                    borrarTarea={borrarTarea}/>
+                    return (
+                        <Tareas 
+                        key ={tarea.id} 
+                        tarea={tarea}
+                        toggleCompletada = {toggleCompletada} 
+                        editarTarea={editarTarea}
+                        borrarTarea={borrarTarea}/>
+                    )
                 }    
                 return;
 

@@ -51,6 +51,32 @@
   margin-left: 10px;
 }
 
+.black-theme {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: black;
+  cursor: pointer;  
+}
+
+.blue-theme {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: var(--azul);
+  cursor: pointer;  
+}
+
+
+.black-header {
+  background: #000;
+}
+
+.black-button {
+  background: #000;
+  border: 1px solid #fff;
+}
+
 /*FORM*/
 
 .form-to-do {

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCheckSquare, faEdit, faTimes, faSquare, faToggleOff} from '@fortawesome/free-solid-svg-icons';
+import {faCheckSquare, faEdit, faTimes, faSquare} from '@fortawesome/free-solid-svg-icons';
 
 const Tareas = ({tarea, toggleCompletada, editarTarea, borrarTarea}) => { //impotando funciones y propiedades de ListaTareas
 
